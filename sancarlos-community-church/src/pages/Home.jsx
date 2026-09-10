@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
-import { ShieldCheck, Church, Soup, GraduationCap, Users, HeartHandshake, ArrowRight, MapPin } from 'lucide-react'
+import { ShieldCheck, Church, Soup, GraduationCap, Users, ArrowRight, MapPin } from 'lucide-react'
 import Hero from '../components/Hero'
 import SectionHeader from '../components/SectionHeader'
 import Newsletter from '../components/Newsletter'
@@ -86,13 +86,7 @@ export default function Home() {
       <section className="py-20">
         <div className="container-site">
           <SectionHeader eyebrow="Get Involved" title="Worship With Us. Serve With Us." />
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="card text-center">
-              <HeartHandshake size={36} className="text-gold-500 mx-auto mb-4" />
-              <h3 className="font-serif text-xl text-forest-900 mb-2">Give</h3>
-              <p className="text-gray-600 text-sm mb-5">Your gift keeps the food pantry stocked, the lights on, and programs free for every family.</p>
-              <Link to="/donate" className="btn-primary w-full justify-center">Donate</Link>
-            </div>
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             <div className="card text-center">
               <Users size={36} className="text-gold-500 mx-auto mb-4" />
               <h3 className="font-serif text-xl text-forest-900 mb-2">Volunteer</h3>
