@@ -36,7 +36,11 @@ export default function Header() {
       <div className="bg-white/95 backdrop-blur shadow">
         <div className="container-site flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-3">
-            <img src="/logo.svg" alt="San Carlos Community Church logo" className="w-10 h-10" />
+            <img 
+              src="https://i.ibb.co/353pjk5p/logo.jpg" 
+              alt="San Carlos Community Church logo" 
+              className="w-10 h-10 rounded-lg object-cover" 
+            />
             <div className="leading-tight">
               <span className="font-serif font-bold text-forest-900 text-lg block">San Carlos Community Church</span>
               <span className="text-[11px] text-forest-600 tracking-wide">Serving Smith County, Texas since 2009</span>
