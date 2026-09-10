@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Mail, Phone, MapPin, ShieldCheck, Facebook, Instagram, Youtube } from 'lucide-react'
+import { Mail, Phone, MapPin, ShieldCheck } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -14,11 +14,6 @@ export default function Footer() {
             A Christ-centered, community-focused church and registered 501(c)(3) nonprofit
             organization serving San Carlos and greater Smith County, Texas since 2009.
           </p>
-          <div className="flex gap-3 mt-5">
-            <a href="https://www.facebook.com/sancarloscommunitychurch" target="_blank" rel="noreferrer" aria-label="Facebook" className="w-9 h-9 rounded-full bg-forest-800 flex items-center justify-center hover:bg-gold-500 hover:text-forest-950 transition-colors"><Facebook size={16} /></a>
-            <a href="https://www.instagram.com/sancarloscommunitychurch" target="_blank" rel="noreferrer" aria-label="Instagram" className="w-9 h-9 rounded-full bg-forest-800 flex items-center justify-center hover:bg-gold-500 hover:text-forest-950 transition-colors"><Instagram size={16} /></a>
-            <a href="https://www.youtube.com/@sancarloscommunitychurch" target="_blank" rel="noreferrer" aria-label="YouTube" className="w-9 h-9 rounded-full bg-forest-800 flex items-center justify-center hover:bg-gold-500 hover:text-forest-950 transition-colors"><Youtube size={16} /></a>
-          </div>
         </div>
         <div>
           <h3 className="text-white font-serif font-bold text-lg mb-4">Quick Links</h3>
