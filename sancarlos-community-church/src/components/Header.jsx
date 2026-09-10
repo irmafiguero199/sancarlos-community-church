@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { Menu, X, Mail, Phone, MapPin, ShieldCheck, HeartHandshake } from 'lucide-react'
+import { Menu, X, Mail, Phone, MapPin, ShieldCheck } from 'lucide-react'
 
 const NAV = [
   { to: '/', label: 'Home' },
@@ -49,9 +49,6 @@ export default function Header() {
                 {n.label}
               </NavLink>
             ))}
-            <Link to="/donate" className="btn-primary !py-2 !px-4 text-sm">
-              <HeartHandshake size={16} /> Donate
-            </Link>
           </nav>
           <button onClick={() => setOpen(!open)} className="lg:hidden text-forest-900 p-2" aria-label="Toggle menu">
             {open ? <X size={26} /> : <Menu size={26} />}
@@ -65,7 +62,6 @@ export default function Header() {
                 {n.label}
               </NavLink>
             ))}
-            <Link to="/donate" onClick={() => setOpen(false)} className="btn-primary w-full justify-center mt-2"><HeartHandshake size={16} /> Donate</Link>
           </nav>
         )}
       </div>
