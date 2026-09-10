@@ -45,14 +45,15 @@ export default function Contact() {
                 </li>
               </ul>
             </div>
-            <div className="card bg-forest-900 !text-forest-100 border-l-4 border-gold-500">
+
+            <div className="p-6 rounded-xl bg-forest-900 text-white border-l-4 border-gold-500 shadow-md">
               <div className="flex gap-3 items-start">
-                <ShieldCheck size={28} className="text-gold-400 shrink-0" />
+                <ShieldCheck size={28} className="text-gold-400 shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="font-serif text-lg text-white">Nonprofit Information</h3>
-                  <p className="text-sm mt-2 leading-relaxed">
+                  <h3 className="font-serif text-lg text-white font-bold">Nonprofit Information</h3>
+                  <p className="text-sm mt-2 leading-relaxed text-forest-100">
                     San Carlos Community Church is a registered 501(c)(3) tax-exempt organization.
-                    EIN: <strong className="text-gold-300">27-3389686</strong> · Incorporated in the State of Texas in 2009.
+                    EIN: <strong className="text-gold-300 font-bold">27-3389686</strong> · Incorporated in the State of Texas in 2009.
                     Mailing address: PO Box 131598, Tyler, TX 75713-1598.
                     Donations are tax-deductible to the fullest extent allowed by law.
                   </p>
