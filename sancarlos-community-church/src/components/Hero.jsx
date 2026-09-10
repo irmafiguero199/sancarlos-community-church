@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ShieldCheck, ArrowRight, HandHeart } from 'lucide-react'
+import { ShieldCheck, ArrowRight, Mail } from 'lucide-react'
 
 const STATS = [
   { value: '17', label: 'Years serving Smith County' },
@@ -27,7 +27,7 @@ export default function Hero() {
         </p>
         <div className="flex flex-wrap justify-center gap-4 mt-9">
           <Link to="/about" className="btn-primary">Discover Our Church <ArrowRight size={18} /></Link>
-          <Link to="/donate" className="btn-outline"><HandHeart size={18} /> Give Today</Link>
+          <Link to="/contact" className="btn-outline"><Mail size={18} /> Contact Us</Link>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto">
           {STATS.map((s) => (
