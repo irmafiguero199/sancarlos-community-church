@@ -23,7 +23,6 @@ export default function Footer() {
             <li><Link className="hover:text-gold-300" to="/programs">Our Programs</Link></li>
             <li><Link className="hover:text-gold-300" to="/impact">Impact Report</Link></li>
             <li><Link className="hover:text-gold-300" to="/registration-information">Registration Information</Link></li>
-            <li><Link className="hover:text-gold-300" to="/donate">Donate</Link></li>
           </ul>
         </div>
         <div>
