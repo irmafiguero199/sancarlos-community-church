@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-forest-50 text-gray-800 font-sans antialiased; }
+
+.container-site { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+
+.btn-primary { @apply inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-forest-950 font-semibold px-6 py-3 rounded-md transition-colors; }
+.btn-outline { @apply inline-flex items-center gap-2 border border-white/60 text-white hover:bg-white hover:text-forest-950 font-semibold px-6 py-3 rounded-md transition-colors; }
+.btn-forest { @apply inline-flex items-center gap-2 bg-forest-800 hover:bg-forest-900 text-white font-semibold px-6 py-3 rounded-md transition-colors; }
+
+.card { @apply bg-white rounded-xl shadow-md p-6; }
+.legal h2 { @apply font-serif text-2xl text-forest-900 mt-10 mb-3; }
+.legal h3 { @apply font-semibold text-lg text-forest-800 mt-6 mb-2; }
+.legal p, .legal li { @apply text-gray-700 leading-relaxed; }
+.legal ul { @apply list-disc pl-6 space-y-2 my-3; }

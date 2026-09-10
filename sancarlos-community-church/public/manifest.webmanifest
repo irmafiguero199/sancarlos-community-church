@@ -1,0 +1,12 @@
+{
+  "name": "San Carlos Community Church",
+  "short_name": "SC3 Church",
+  "description": "501(c)(3) nonprofit church serving San Carlos and Smith County, Texas (EIN 27-3389686)",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0d261c",
+  "theme_color": "#1b4332",
+  "icons": [
+    { "src": "/logo.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
