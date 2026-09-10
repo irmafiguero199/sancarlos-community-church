@@ -7,7 +7,11 @@ export default function Footer() {
       <div className="container-site py-14 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-3 mb-4">
-            <img src="/logo.svg" alt="San Carlos Community Church logo" className="w-11 h-11" />
+            <img 
+              src="https://i.ibb.co/353pjk5p/logo.jpg" 
+              alt="San Carlos Community Church logo" 
+              className="w-12 h-12 rounded-lg object-cover" 
+            />
             <span className="font-serif font-bold text-white text-lg leading-tight">San Carlos<br />Community Church</span>
           </div>
           <p className="text-forest-200 text-sm leading-relaxed">
