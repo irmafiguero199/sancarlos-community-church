@@ -56,7 +56,6 @@ export default function Contact() {
                     Mailing address: PO Box 131598, Tyler, TX 75713-1598.
                     Donations are tax-deductible to the fullest extent allowed by law.
                   </p>
-                  <a href="/registration-information" className="text-gold-300 underline text-sm inline-block mt-3">View full registration details →</a>
                 </div>
               </div>
             </div>
