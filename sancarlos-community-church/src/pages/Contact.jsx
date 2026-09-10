@@ -1,18 +1,7 @@
 import { Helmet } from 'react-helmet-async'
-import { useState } from 'react'
-import { MapPin, Mail, Phone, Clock, ShieldCheck, Send } from 'lucide-react'
+import { MapPin, Mail, Phone, Clock, ShieldCheck } from 'lucide-react'
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })
-  const [sent, setSent] = useState(false)
-  const update = (e) => setForm({ ...form, [e.target.name]: e.target.value })
-  const submit = (e) => {
-    e.preventDefault()
-    const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)
-    window.location.href = `mailto:admin@sancarloscommunitychurch.bond?subject=${encodeURIComponent(form.subject)}&body=${body}`
-    setSent(true)
-  }
-
   return (
     <>
       <Helmet>
@@ -29,7 +18,7 @@ export default function Contact() {
       </section>
 
       <section className="py-20">
-        <div className="container-site grid lg:grid-cols-2 gap-10">
+        <div className="container-site max-w-3xl mx-auto">
           <div className="space-y-6">
             <div className="card">
               <h2 className="font-serif text-2xl text-forest-900 mb-5">Church Information</h2>
@@ -71,26 +60,6 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="card">
-            <h2 className="font-serif text-2xl text-forest-900 mb-2">Send Us a Message</h2>
-            <p className="text-sm text-gray-500 mb-6">Your message opens in your email app addressed to admin@sancarloscommunitychurch.bond.</p>
-            {sent ? (
-              <div className="bg-forest-50 border border-forest-200 rounded-lg p-5 text-forest-800">
-                Thank you, {form.name.split(' ')[0] || 'friend'}! Your email draft has been opened. You can also reach us directly at (903) 555-0184.
-              </div>
-            ) : (
-              <form onSubmit={submit} className="space-y-4">
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <input name="name" required onChange={update} placeholder="Full name" className="w-full rounded-md border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-forest-500" />
-                  <input name="email" type="email" required onChange={update} placeholder="Email address" className="w-full rounded-md border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-forest-500" />
-                </div>
-                <input name="subject" required onChange={update} placeholder="Subject (e.g. Volunteering, Food pantry, Prayer request)" className="w-full rounded-md border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-forest-500" />
-                <textarea name="message" required rows={6} onChange={update} placeholder="Your message" className="w-full rounded-md border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-forest-500" />
-                <button type="submit" className="btn-forest w-full justify-center"><Send size={18} /> Send Message</button>
-              </form>
-            )}
           </div>
         </div>
       </section>
